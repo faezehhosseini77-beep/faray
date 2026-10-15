@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>faray</title>
-    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./src/css/output.css" />
   </head>
   <body class="overflow-x-hidden">
@@ -433,38 +432,6 @@
     </footer>
     <!--project-->
 
-    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
-    <script src="./src/js/panels.js"></script>
-    <script>
-      // تنظیمات مشترک اسلایدرها (ریسپانسیو)
-      const sliderOptions = {
-        slidesPerView: 1,
-        spaceBetween: 12,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        breakpoints: {
-          380: { slidesPerView: 2, spaceBetween: 12 },
-          640: { slidesPerView: 3, spaceBetween: 16 },
-          1024: { slidesPerView: 2, spaceBetween: 16 },
-          1536: { slidesPerView: 3, spaceBetween: 20 },
-        },
-      };
-      new Swiper(".mySwiper", sliderOptions);
-      new Swiper(".mySwiperMardane", sliderOptions);
-    </script>
-    <script>
-      // عوض شدن عکس اولین محصول با رفتن ماوس روی آن
-      const image1 = document.querySelector("#image-1");
-      if (image1) {
-        image1.addEventListener("mouseenter", () => {
-          image1.src = "./src/image/content/content-center/img11.JPEG";
-        });
-        image1.addEventListener("mouseleave", () => {
-          image1.src = "./src/image/content/content-center/img12.JPEG";
-        });
-      }
-    </script>
+   <script type="module" src="./src/js/main.js"></script>
   </body>
 </html>

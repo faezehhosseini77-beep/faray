@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ثبت سفارش | faray</title>
+    <link rel="stylesheet" href="./src/css/output.css" />
+  </head>
+  <body class="overflow-x-hidden">
+    <div class="w-full">
+      <!--menu-->
+      <header class="w-full">
+        <div
+          class="max-w-450 mx-auto px-3 sm:px-6 lg:px-8 py-3 lg:py-0 lg:h-16.25 flex flex-wrap items-center justify-between gap-y-3"
+        >
+          <a href="./index.html" class="order-1 shrink-0">
+            <img
+              src="./src/image/logo-text.jpg"
+              class="w-24 sm:w-32 lg:w-30 h-auto opacity-75"
+              alt="faray"
+            />
+          </a>
+          <nav
+            class="order-3 lg:order-2 w-full lg:w-auto flex flex-wrap justify-center gap-x-4 sm:gap-x-6 gap-y-1"
+          >
+            <a class="font-sans text-[#3D3D3D] font-bold text-[12px] sm:text-[14px]" href="./new.html">جدیدترین ها</a>
+            <a class="font-sans text-[#3D3D3D] font-bold text-[12px] sm:text-[14px]" href="#">پرفروش ترین ها</a>
+            <a class="font-sans text-[#3D3D3D] font-bold text-[12px] sm:text-[14px]" href="#">درباره ما</a>
+            <a class="font-sans text-[#3D3D3D] font-bold text-[12px] sm:text-[14px]" href="#">تماس باما</a>
+          </nav>
+          <div class="order-2 lg:order-3 flex flex-row items-center gap-x-3 sm:gap-x-4">
+            <button type="button" class="cursor-pointer" aria-label="جستجو">
+              <img src="./src/image/Search.png" class="w-5 sm:w-6 h-auto" alt="" />
+            </button>
+            <button type="button" data-open="login" class="cursor-pointer" aria-label="ورود">
+              <img src="./src/image/User Alt.png" class="w-5 sm:w-6 h-auto" alt="" />
+            </button>
+            <button type="button" data-open="cart" class="cursor-pointer" aria-label="سبد خرید">
+              <img src="./src/image/Shopping Cart.png" class="w-5 sm:w-6 h-auto" alt="" />
+            </button>
+          </div>
+        </div>
+      </header>
+      <!--menu-->
+
+      <main class="max-w-450 mx-auto px-4 sm:px-8 lg:px-16 xl:px-30 pb-12 lg:pb-20">
+        <!--steps-->
+        <ol class="flex flex-row justify-center items-center gap-x-4 sm:gap-x-8 py-8 sm:py-12 lg:py-16">
+          <li class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#666666] text-white font-Yekan text-[13px] sm:text-[15px] flex justify-center items-center">1</li>
+          <li class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#3D3D3D] text-white font-Yekan text-[13px] sm:text-[15px] flex justify-center items-center" aria-current="step">2</li>
+          <li class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#E5E5E5] border border-gray-300 text-gray-500 font-Yekan text-[13px] sm:text-[15px] flex justify-center items-center">3</li>
+          <li class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#E5E5E5] border border-gray-300 text-gray-500 flex justify-center items-center">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          </li>
+        </ol>
+
+        <div class="flex flex-col lg:flex-row gap-6 lg:gap-8 items-start">
+          <!--main column (right in RTL)-->
+          <div class="w-full lg:flex-1 min-w-0 flex flex-col gap-y-5">
+            <!--shipping method-->
+            <section class="border border-gray-300 p-4 sm:p-6">
+              <h2 class="font-sans font-bold text-[18px] sm:text-[20px] text-[#3D3D3D] mb-5">روش ارسال</h2>
+
+              <label class="flex flex-row items-start gap-x-3 cursor-pointer mb-5">
+                <input type="radio" name="shipping" value="post" class="peer sr-only" />
+                <span class="mt-1 w-5 h-5 shrink-0 rounded-full bg-[#CFCFCF] peer-checked:bg-[#3D3D3D] peer-focus-visible:ring-2 ring-black ring-offset-2"></span>
+                <span class="flex flex-col gap-y-2">
+                  <span class="font-sans font-bold text-[14px] sm:text-[15px] text-[#3D3D3D]">پست پیشتاز</span>
+                  <span class="font-sans text-[12px] sm:text-[14px] text-[#3D3D3D] leading-6">مدت زمان تحویل سفارش حداکثر ۴ روز کاری پس از زودترین زمان ارسال سبد خرید شما</span>
+                </span>
+              </label>
+
+              <label class="flex flex-row items-start gap-x-3 cursor-pointer">
+                <input type="radio" name="shipping" value="courier" class="peer sr-only" checked />
+                <span class="mt-1 w-5 h-5 shrink-0 rounded-full bg-[#CFCFCF] peer-checked:bg-[#3D3D3D] peer-focus-visible:ring-2 ring-black ring-offset-2"></span>
+                <span class="flex flex-col gap-y-2">
+                  <span class="font-sans font-bold text-[14px] sm:text-[15px] text-[#3D3D3D]">ارسال با پیک</span>
+                  <span class="font-sans text-[12px] sm:text-[14px] text-[#3D3D3D] leading-6">مدت زمان ارسال کمتر از ۸ ساعت در شهرهای تهران و کرج</span>
+                </span>
+              </label>
+            </section>
+
+            <!--address-->
+            <section class="border border-gray-300 p-4 sm:p-6">
+              <h2 class="font-sans font-bold text-[18px] sm:text-[20px] text-[#3D3D3D] mb-5">آدرس ارسال</h2>
+
+              <div class="flex flex-row flex-wrap gap-x-6 gap-y-3 font-sans text-[12px] sm:text-[14px] text-[#3D3D3D] leading-7 mb-3">
+                <p><b>استان:</b> تهران</p>
+                <p><b>شهر:</b> تهران</p>
+                <p class="min-w-0"><b>آدرس پستی:</b> سعادت آباد، بالاتر از میدان کاج، خیابان دوم (شهید عبقری)، بلوار بهزاد شمالی، نبش باغستان</p>
+              </div>
+              <div class="flex flex-row flex-wrap gap-x-6 gap-y-3 font-sans text-[12px] sm:text-[14px] text-[#3D3D3D] leading-7 mb-5">
+                <p><b>کد پستی:</b> <span class="font-Yekan">6675443</span></p>
+                <p><b>تلفن همراه:</b> <span class="font-Yekan">09123456789</span></p>
+              </div>
+
+              <div class="flex flex-row flex-wrap gap-2">
+                <button type="button" class="h-8 sm:h-9 px-4 bg-[#3D3D3D] hover:bg-black transition text-white font-sans font-bold text-[11px] sm:text-[12px] cursor-pointer">افزودن آدرس جدید</button>
+                <button type="button" class="h-8 sm:h-9 px-4 border border-[#3D3D3D] hover:bg-[#F5F5F5] transition text-[#3D3D3D] font-sans font-bold text-[11px] sm:text-[12px] cursor-pointer">ویرایش اطلاعات</button>
+              </div>
+            </section>
+
+            <!--notes-->
+            <section class="border border-gray-300 p-4 sm:p-6">
+              <h2 class="font-sans font-bold text-[18px] sm:text-[20px] text-[#3D3D3D] mb-4">توضیحات</h2>
+              <textarea
+                rows="4"
+                placeholder="اگر توضیحی برای دریافت سفارش دارید اینجا بنویسید..."
+                class="w-full h-24 sm:h-28 resize-none outline-none font-sans text-[12px] sm:text-[14px] text-[#3D3D3D] placeholder:text-gray-400"
+              ></textarea>
+            </section>
+          </div>
+
+          <!--summary (left in RTL)-->
+          <aside class="w-full lg:w-72 xl:w-80 shrink-0 border border-gray-300 p-4 sm:p-5">
+            <h2 class="font-sans font-bold text-[14px] sm:text-[15px] text-[#3D3D3D] text-center mb-6">سبد خرید</h2>
+
+            <dl id="summary" class="flex flex-col gap-y-4 font-sans text-[11px] sm:text-[12px] text-[#3D3D3D] mb-6">
+              <div class="flex flex-row justify-between gap-x-2">
+                <dt>قیمت کالاها (<span id="s-count" class="font-Yekan">0</span>)</dt>
+                <dd class="font-Yekan"><span id="s-items">0</span> تومان</dd>
+              </div>
+              <div class="flex flex-row justify-between gap-x-2">
+                <dt>قیمت پست</dt>
+                <dd id="s-shipping">رایگان</dd>
+              </div>
+              <div class="flex flex-row justify-between gap-x-2 font-bold">
+                <dt>جمع سبد خرید</dt>
+                <dd class="font-Yekan"><span id="s-total">0</span> تومان</dd>
+              </div>
+              <div class="flex flex-row justify-between gap-x-2 font-bold text-[#DC2626]">
+                <dt>سود شما از خرید</dt>
+                <dd class="font-Yekan"><span id="s-saving">0</span> تومان</dd>
+              </div>
+            </dl>
+
+            <button
+              type="button"
+              id="place-order"
+              class="w-full h-10 bg-[#DC2626] hover:bg-[#B91C1C] transition text-white font-sans font-bold text-[12px] cursor-pointer mb-4"
+            >
+              ثبت سفارش
+            </button>
+            <hr class="border-gray-300 mb-4" />
+            <p class="font-sans text-[10px] sm:text-[11px] text-gray-500 leading-5">
+              <b class="text-[#3D3D3D]">ارسال رایگان</b> برای خریدهای بالای ۲ میلیون تومان
+            </p>
+            <p id="order-msg" class="hidden mt-4 font-sans text-[11px] text-[#3D3D3D] bg-[#F5F5F5] p-3"></p>
+          </aside>
+        </div>
+
+        <!--bottom buttons-->
+        <div class="flex flex-row flex-wrap justify-between gap-3 mt-8">
+          <a
+            href="./index.html#cart"
+            class="inline-flex items-center justify-center gap-x-2 h-10 px-5 border border-[#3D3D3D] hover:bg-[#F5F5F5] transition font-sans font-bold text-[12px] text-[#3D3D3D]"
+          >
+            بازگشت به سبد خرید
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <button
+            type="button"
+            id="continue-order"
+            class="inline-flex items-center justify-center gap-x-2 h-10 sm:h-12 px-6 bg-[#3D3D3D] hover:bg-black transition text-white font-sans font-bold text-[12px] cursor-pointer"
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            ثبت و ادامه خرید
+          </button>
+        </div>
+      </main>
+
+      <footer class="bg-[#0B0B0B] text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-10 lg:py-12">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-10">
+            <div>
+              <h3 class="text-base sm:text-lg font-bold mb-5">اولین کسی باش که از تخفیف‌ها باخبر میشه</h3>
+              <input type="email" placeholder="ایمیل" class="w-full h-11 bg-[#77746d] border border-white/40 px-4 text-sm outline-none mb-2" />
+              <input type="text" placeholder="نام شما" class="w-full h-11 bg-[#77746d] border border-white/40 px-4 text-sm outline-none mb-2" />
+              <button class="w-full h-11 border border-white text-sm font-bold hover:bg-white hover:text-black transition">اشتراک</button>
+            </div>
+            <div>
+              <h3 class="text-base sm:text-lg font-bold mb-5">درباره فارای</h3>
+              <ul class="space-y-4 text-sm">
+                <li><a href="#" class="hover:text-gray-400 transition">اتاق خبر فارای</a></li>
+                <li><a href="#" class="hover:text-gray-400 transition">همکاری با ما</a></li>
+                <li><a href="#" class="hover:text-gray-400 transition">تماس با ما</a></li>
+                <li><a href="#" class="hover:text-gray-400 transition">درباره ما</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-base sm:text-lg font-bold mb-5">خدمات مشتریان</h3>
+              <ul class="space-y-4 text-sm">
+                <li><a href="#" class="hover:text-gray-400 transition">پاسخ به سوالات متداول</a></li>
+                <li><a href="#" class="hover:text-gray-400 transition">شرایط استفاده</a></li>
+                <li><a href="#" class="hover:text-gray-400 transition">حریم خصوصی</a></li>
+                <li><a href="#" class="hover:text-gray-400 transition">گزارش باگ</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-base sm:text-lg font-bold mb-5">راهنمای خرید از فارای</h3>
+              <ul class="space-y-4 text-sm">
+                <li><a href="#" class="hover:text-gray-400 transition">خرید قسطی</a></li>
+                <li><a href="#" class="hover:text-gray-400 transition">نحوه ثبت سفارش</a></li>
+                <li><a href="#" class="hover:text-gray-400 transition">رویه ارسال سفارش</a></li>
+                <li><a href="#" class="hover:text-gray-400 transition">شیوه‌های پرداخت</a></li>
+              </ul>
+            </div>
+            <div class="flex flex-col items-start">
+              <div class="flex items-center gap-3 mb-6">
+                <span class="text-2xl font-bold"> فارای </span>
+                <div class="w-8 h-8 rounded-full border-4 border-white"></div>
+              </div>
+              <div class="flex flex-wrap gap-x-4 gap-y-2 text-gray-300 text-sm">
+                <a href="#" class="hover:text-white transition"> Instagram </a>
+                <a href="#" class="hover:text-white transition"> Twitter </a>
+                <a href="#" class="hover:text-white transition"> Linkedin </a>
+                <a href="#" class="hover:text-white transition"> Pinterest </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="./src/js/panels.js"></script>
+    <script>
+      // ---- تنظیمات قیمت ) ----
+      const FREE_SHIPPING_FROM = 2000000; // ارسال رایگان از این مبلغ به بالا
+      const SHIPPING_FEE = 150000; // هزینه پست برای سفارش‌های کمتر از آن
+
+      const fmt = (n) => Number(n).toLocaleString("en-US");
+      let items = [];
+      try {
+        items = JSON.parse(localStorage.getItem("faray-cart")) || [];
+      } catch (e) {}
+
+      const count = items.reduce((s, it) => s + it.qty, 0);
+      const itemsPrice = items.reduce((s, it) => s + it.price * it.qty, 0);
+      const oldPrice = items.reduce((s, it) => s + (it.oldPrice || it.price) * it.qty, 0);
+      const saving = oldPrice - itemsPrice;
+      const shipping = itemsPrice === 0 || itemsPrice >= FREE_SHIPPING_FROM ? 0 : SHIPPING_FEE;
+
+      document.getElementById("s-count").textContent = count;
+      document.getElementById("s-items").textContent = fmt(itemsPrice);
+      document.getElementById("s-shipping").textContent = shipping ? fmt(shipping) + " تومان" : "رایگان";
+      document.getElementById("s-total").textContent = fmt(itemsPrice + shipping);
+      document.getElementById("s-saving").textContent = fmt(saving);
+
+      // دکمه‌های ثبت (فعلاً نمایشی، چون بک‌اند و پرداخت نداریم)
+      const msg = document.getElementById("order-msg");
+      const submit = () => {
+        msg.textContent = count
+          ? "سفارش شما ثبت شد (نمایشی)."
+          : "سبد خرید شما خالی است. اول محصولی اضافه کنید.";
+        msg.classList.remove("hidden");
+      };
+      document.getElementById("place-order").addEventListener("click", submit);
+      document.getElementById("continue-order").addEventListener("click", submit);
+    </script>
+  </body>
+</html>

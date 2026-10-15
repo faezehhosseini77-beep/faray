@@ -19,7 +19,7 @@
       size: "M",
       price: 2980000,
       oldPrice: 3850000,
-      image: "./src/image/content/content-1/img4.jpg",
+      image: new URL("../image/content/content-1/img4.jpg", import.meta.url).href,
       qty: 1,
     },
     {
@@ -28,7 +28,7 @@
       size: "M",
       price: 2980000,
       oldPrice: 3850000,
-      image: "./src/image/content/content-1/img2.JPEG",
+      image: new URL("../image/content/content-1/img2.JPEG", import.meta.url).href,
       qty: 1,
     },
   ];
@@ -72,7 +72,7 @@
           <span class="font-sans font-bold text-[14px] text-[#3D3D3D]">جمع:</span>
           <span class="font-Yekan font-bold text-[14px] text-[#3D3D3D]"><span id="cart-total">0</span> تومان</span>
         </div>
-        <button type="button" class="w-full h-11 bg-[#666666] hover:bg-black transition text-white font-sans font-bold text-[13px] cursor-pointer">
+        <button type="button" id="cart-checkout" class="w-full h-11 bg-[#666666] hover:bg-black transition text-white font-sans font-bold text-[13px] cursor-pointer">
           خرید
         </button>
       </div>
@@ -255,5 +255,14 @@
     open: () => open("cart"),
   };
 
+  /* ---------- checkout ---------- */
+  document.getElementById("cart-checkout").addEventListener("click", () => {
+    if (!items.length) return;
+    location.href = "./checkout.html";
+  });
+
   render();
+
+  // اگر آدرس صفحه با #cart تمام شد، سبد خرید خودکار باز شود
+  if (location.hash === "#cart") open("cart");
 })();
